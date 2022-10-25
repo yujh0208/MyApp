@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    android:orientation="vertical"
+    android:padding="30dp">
+    //상단 고정
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="@font/juhee"
+        android:text="Join"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    // 스크롤바
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarFadeDuration = "0"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ID_input"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/juhee"
+                android:layout_height="wrap_content"
+                android:text="ID " />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputID"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/juhee"
+                    android:hint="ID를 입력하세요" />
+
+                <Button
+                    android:id="@+id/validateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/juhee"
+                    android:textSize="50px"
+                    android:backgroundTint="#87CEFA"
+                    android:text="중복확인" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/PW_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:text="PW " />
+
+            <EditText
+                android:id="@+id/inputPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:hint="PW를 입력하세요(영어, 문자 포함 8-20자리)"
+                android:inputType="textPassword" />
+            <EditText
+                    android:id="@+id/PWCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/juhee"
+                    android:hint="PW를 한번 더 입력해주세요"
+                    android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/NAME_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:text="이름 " />
+
+            <EditText
+                android:id="@+id/inputName"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:hint="이름을 입력하세요" />
+
+            <TextView
+                android:id="@+id/number_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:text="전화번호 " />
+
+            <EditText
+                android:id="@+id/inputNumber"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:ems="10"
+                android:hint="전화번호를 입력하세요"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/ADDRESS_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:text="주소 " />
+
+            <EditText
+                android:id="@+id/inputAddress"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:hint="주소를 입력하세요" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'개인정보 사용 동의 간략 약관'"
+                android:fontFamily="@font/juhee"
+                android:textSize="20dp"
+                android:textFontWeight="100"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/juhee"
+                android:text="본인은 애플리케이션에 가입함에 따라 [개인정보 보호법] 제15조 및 제17조에 따라 아래의 내용으로 개인정보를 수집, 이용 및 제공하는데 동의합니다.
+                            \n□ 개인정보의 수집 및 이용에 관한 사항
+                            \n- 수집하는 개인정보 항목 (회원가입 양식 내용 일체) : 성명, 전화번호, 주소
+                            \n- 개인정보의 이용 목적 : 수집된 개인정보를 애플리케이션 구축으로만 활용하며, 목적 외의 용도로는 사용하지 않습니다.
+                            \n□ 개인정보의 보관 및 이용 기간
+                            \n- 귀하의 개인정보를 다음과 같이 보관하며, 수집, 이용 및 제공목적이 달성된 경우 [개인정보 보호법] 제21조에 따라 처리합니다.
+                "/>
+
+            <RadioGroup
+                android:id="@+id/AgreeGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/agree"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/juhee"
+                    android:text="동의함" />
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/disagree"-->
+<!--                    android:layout_width="185dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/juhee"-->
+<!--                    android:text="동의안함" />-->
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+    //하단 고정
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/juhee"
+            android:textSize="50px"
+            android:backgroundTint="#87CEFA"
+            android:text="가입하기" />
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/juhee"
+            android:textSize="50px"
+            android:backgroundTint="#87CEFA"
+            android:text="@string/btnReturn" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

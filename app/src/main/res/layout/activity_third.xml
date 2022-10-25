@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0, 1, 2">
+
+    <TableRow
+        android:paddingTop="100px">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="3"
+            android:fontFamily="@font/juhee"
+            android:text="해외여행 상품"
+            android:textSize="50px"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="20px">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200px"
+            android:src="@drawable/german" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200px"
+            android:src="@drawable/belgium" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200px"
+            android:src="@drawable/swiss" />
+    </TableRow>
+    <TableRow
+        android:paddingTop="20px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/juhee"
+            android:text="독일"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/juhee"
+            android:text="벨기에"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/juhee"
+            android:text="스위스"
+            android:textSize="50px"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow
+        android:paddingTop="20px">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200px"
+            android:src="@drawable/ltaly" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200px"
+            android:src="@drawable/czech_republic" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200px"
+            android:src="@drawable/paris" />
+    </TableRow>
+    <TableRow
+        android:paddingTop="20px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/juhee"
+            android:text="이탈리아"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/juhee"
+            android:text="체코"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/juhee"
+            android:text="프랑스"
+            android:textSize="50px"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0, 1, 2">
+        <TableRow
+            android:layout_marginTop="10px">
+            <Button
+                android:id="@+id/btnReturn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:fontFamily="@font/juhee"
+                android:text="돌아가기"
+                android:backgroundTint="#87CEFA"
+                android:textAlignment="center"
+                android:textSize="50px" />
+
+            <Button
+                android:id="@+id/showInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:fontFamily="@font/juhee"
+                android:text="회원정보"
+                android:backgroundTint="#87CEFA"
+                android:textAlignment="center"
+                android:textSize="50px" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/showTable"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0, 1, 2">
+        <TableRow android:paddingTop="40px">
+            <TextView
+                android:id="@+id/textViewID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:text="ID"
+                android:textSize="50px"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewPW"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:text="PW"
+                android:textSize="50px"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewNAME"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:text="NAME"
+                android:textSize="50px"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow android:paddingTop="40px">
+            <TextView
+                android:id="@+id/showID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:textAlignment="center"
+                android:text="TextView"
+                android:textSize="40px"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/showPW"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:textAlignment="center"
+                android:text="TextView"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showNAME"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:textAlignment="center"
+                android:text="TextView"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow android:paddingTop="40px">
+            <TextView
+                android:id="@+id/textViewNUMBER"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:text="NUM"
+                android:textSize="50px"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewADDRESS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:text="ADDR"
+                android:textSize="50px"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow android:paddingTop="40px">
+            <TextView
+                android:id="@+id/showNUM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:textAlignment="center"
+                android:text="TextView"
+                android:textSize="40px"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/showADDR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:textAlignment="center"
+                android:text="TextView"
+                android:textSize="40px"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/showAGREE"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/juhee"
+                android:text="TextView"
+                android:textSize="50px"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</TableLayout>
